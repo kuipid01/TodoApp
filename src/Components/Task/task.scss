@@ -1,0 +1,118 @@
+$TextColor: #333333;
+.tasks{
+    background: white;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+.task-text{
+width: 80%;
+line-height: 35px;
+text-overflow: ellipsis;
+
+p.complete{
+    background: #c0afaf;
+    text-decoration: line-through;
+    opacity: .7;
+}
+}
+.handles{
+display: flex;
+gap: 10px;
+div{
+padding: 10px;
+color: $TextColor;
+border: solid gray .2px ;
+&:nth-child(1).complete{
+    background-color: rgb(24, 160, 87);
+}
+&:nth-child(1){
+    position: relative;
+    transition: all .3s ease-in-out;
+    small{
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        top: -1.3rem;
+        padding: 3px;
+        font-size: 10px;
+        background: #000;
+        color: wheat;
+        display: none;
+        opacity: 0;
+    }
+
+&:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(68, 183, 68);
+    small{
+       opacity: 1;
+        display: flex;
+       
+    }
+}
+
+}
+&:nth-child(2){
+    position: relative;
+    transition: all .3s ease-in-out;
+    small{
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        top: -1.3rem;
+        padding: 3px;
+        font-size: 10px;
+        background: #000;
+        color: wheat;
+        display: none;
+        opacity: 0;
+    }
+
+&:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    small{
+       opacity: 1;
+        display: flex;
+       
+    }
+}
+}
+&:nth-child(3).fav{
+    background-color: rgb(237, 109, 109);
+}
+&:nth-child(3){
+    position: relative;
+    transition: all .3s ease-in-out;
+    small{
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        top: -1.3rem;
+        padding: 3px;
+        font-size: 10px;
+        background: #000;
+        color: wheat;
+        display: none;
+        opacity: 0;
+    }
+
+&:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(70, 68, 183);
+    small{
+       opacity: 1;
+        display: flex;
+       
+    }
+}
+}
+}
+}
+}
